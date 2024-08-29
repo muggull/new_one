@@ -1,0 +1,25 @@
+name: env_variables
+on:
+  workflow_dispatch:
+#This envs we will access from  any jobs
+env:
+  DAY_OF_WEEK: funday!
+  testvar: value_1
+jobs:
+  main_job:
+    name: 'Print env vars'
+    runs-on: ubuntu-latest
+    #this envs will work on this "main_job" only.
+    env:
+      Greeting: Dear
+      testvars: value-2
+    steps:
+    - name: print-value-of-env-vars
+      run: |
+        echo "$Greating $Firest_Name. Today is $DAY_OF_WEEK!"
+        echo "testvars $testvars"
+        echo "testvar ${{ env.testvars}}"
+      #The below scope of a variables will work in Steps only.
+      env:
+        First_name: Student
+        testvar: value-3
