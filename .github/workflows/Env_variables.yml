@@ -23,3 +23,13 @@ jobs:
       env:
         First_Name: Student
         testvar: value-3
+  custom_GITHUB_ENV:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set the value 
+      run: |
+        #So we can redirect a viariable to a file called $GITHUB_ENV
+        echo "action_state=yellow" >> $GITHUB_ENV 
+    - name: get the value
+      run: |
+        echo "${{ env.action_state}}" 
