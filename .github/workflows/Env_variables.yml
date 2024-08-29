@@ -16,7 +16,7 @@ jobs:
     steps:
     - name: print-value-of-env-vars
       run: |
-        echo "$Greating $Firest_Name. Today is $DAY_OF_WEEK!"
+        echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
         echo "testvars $testvars"
         echo "testvar ${{ env.testvars}}"
       #The below scope of a variables will work in Steps only.
