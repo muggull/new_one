@@ -32,7 +32,7 @@ jobs:
       steps: 
         - run: echo Windows run_3   
     build-api-app:
-      need: build
+      needs: build
       #build  job will run followed by "build-api-app" this is depends on the build job
       runs-on: windows-latest
       steps: 
