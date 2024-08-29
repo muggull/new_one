@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 #workflow made upof one or more jobs that can run sequentially or in parallel.
-job:
+jobs:
     #this workflow contains a single job called "build"
     build:
      #The type of runner that the job will run on.
