@@ -1,4 +1,4 @@
-name: env_variables
+name: "env_variables"
 on:
   workflow_dispatch:
 #This envs we will access from  any jobs
