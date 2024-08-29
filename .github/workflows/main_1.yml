@@ -1,6 +1,0 @@
-name: srisai
-on:
-  push:
-    branches:
-    - main
-    - release/*
