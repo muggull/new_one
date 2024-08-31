@@ -7,7 +7,6 @@ name: Artifacts Demo
 #   Test results , failure, and screenshots.
 #   stress test performance output and code coverage output.
 on:
-  push:
   workflow_dispatch:
 jobs:
   job_2:
