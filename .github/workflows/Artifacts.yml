@@ -1,4 +1,4 @@
-name: "Artifacts Demo"
+name: Artifacts Demo
 #artifacts allows us to share data betweenn jobs in a workflow
 #and store data once that workflow has completed.
 
@@ -24,6 +24,6 @@ jobs:
     steps:
       name: accessing the file from first job
       run: cat file.txt
-      uses: actions/download-artfacts@v2
+      - uses: actions/download-artfacts@v2
 
     
