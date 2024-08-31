@@ -1,5 +1,5 @@
 
-name: Artifacts Demo
+name: "Artifacts Demo"
 #artifacts allows us to share data betweenn jobs in a workflow
 #and store data once that workflow has completed.
 
