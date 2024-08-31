@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: creating file
-     - run: echo "Hi this file is for writing purpose" > file.txt
+      run: echo "Hi this file is for writing purpose" > file.txt
 
-     - uses: actions/upload-artifacts@v2
+      uses: actions/upload-artifacts@v2
        with:
         name: uploading with uses
         path: file.txt
