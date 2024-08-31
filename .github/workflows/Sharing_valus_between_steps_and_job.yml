@@ -13,5 +13,5 @@ jobs:
     - name: getting the value
       run: | 
         echo "id_value_1:- ${{ steps.value_1.outputs.a}}"
-        echo "GITHUB_ENV:- ${{b}}"
+        echo "GITHUB_ENV:- ${{env.b}}"
      
