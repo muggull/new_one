@@ -4,6 +4,8 @@ on:
 jobs:
   job_1:
     runs-on: ubuntu-latest
+    output:
+      output1: ${{ steps.value_1.outputs.a}}
     steps:
     - name: setting the value
       id: value_1
@@ -19,5 +21,5 @@ jobs:
     needs: job_1
     steps:
     - name: "getting value from job_1"
-      run: echo ${{ needs.job_1.steps.value_1.outputs.a}}
+      run: echo "${{ needs.job_1.output.output1}}"
      
