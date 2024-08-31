@@ -1,0 +1,17 @@
+name: sharing values between steps and jobs
+on:
+  workflow_dispatch:
+jobs:
+  job_1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: setting the value
+      id: value_1
+      run: echo "::set-output name=a::srisai"
+    - name: GITHUB_ENV
+      run: echo "b=srisai_1" >> $GITHUB_ENV
+    - name: getting the value
+      run: | 
+        echo "id_value_1:- ${{ steps.value_1.outputs.a}}"
+        echo "GITHUB_ENV:- ${{b}}"
+     
