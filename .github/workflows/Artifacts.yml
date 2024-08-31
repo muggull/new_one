@@ -6,7 +6,8 @@ name: Artifacts Demo
 #   Log files and core dump
 #   Test results , failure, and screenshots.
 #   stress test performance output and code coverage output.
-on: push
+on:
+  workflow_dispatch:
 jobs:
   job_2:
     runs-on: ubuntu-latest
