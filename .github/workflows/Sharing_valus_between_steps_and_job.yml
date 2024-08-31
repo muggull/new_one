@@ -7,11 +7,17 @@ jobs:
     steps:
     - name: setting the value
       id: value_1
-      run: echo "::set-output name=a::srisai"
+      run: echo "::setOutput name=a::srisai"
     - name: GITHUB_ENV
       run: echo "b=srisai_1" >> $GITHUB_ENV
     - name: getting the value
       run: | 
         echo "id_value_1:- ${{ steps.value_1.outputs.a}}"
         echo "GITHUB_ENV:- ${{env.b}}"
+  job_2:
+    runs-on: ubuntu-latest
+    needs: job_1
+    steps:
+    - name: "getting value fro job1"
+      run: echo ${ needs.job1.steps.value_1.outputs.a}
      
