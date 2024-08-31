@@ -25,5 +25,5 @@ jobs:
     steps:
       - uses: actions/download-artifact@v2
         with:
-          name: file.txt
+          name: "uploading with uses"
       - run: cat file.txt  
