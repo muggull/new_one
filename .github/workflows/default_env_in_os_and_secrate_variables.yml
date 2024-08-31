@@ -14,7 +14,7 @@ jobs:
   secrate_variables:
     runs-on: ubuntu-latest
     steps:
-      - runs: |
+      - run: |
       #i set this password in github-->settings.
       echo 'SRISAI_PASSWORD:- ${{ SRISAI_PASSWORD}}'
         
