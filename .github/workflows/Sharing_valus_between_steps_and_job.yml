@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: setting the value
       id: value_1
-      run: echo "::setOutput name=a::srisai"
+      run: echo "::set-output name=a::srisai"
     - name: GITHUB_ENV
       run: echo "b=srisai_1" >> $GITHUB_ENV
     - name: getting the value
