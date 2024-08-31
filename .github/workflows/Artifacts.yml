@@ -25,5 +25,5 @@ jobs:
       - name: accessing the file from first job
         run: cat file.txt
       - uses: actions/download-artifact@v2
-
-    
+        with:
+          name: file  
