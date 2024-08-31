@@ -4,7 +4,7 @@ on:
 jobs:
   job_1:
     runs-on: ubuntu-latest
-    output:
+    outputs:
       output1: ${{ steps.value_1.outputs.a}}
     steps:
     - name: setting the value
