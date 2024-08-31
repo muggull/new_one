@@ -6,8 +6,8 @@ jobs:
   windows_job:
     runs-on: windows-latest
     steps:
-      run: env
+      - run: env
   linux_job:
      runs-on: ubuntu-latest
      steps:
-       run: env
+      - run: env
