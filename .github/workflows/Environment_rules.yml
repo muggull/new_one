@@ -1,6 +1,5 @@
 name: using Environment rule are secret variables.
 on:
-  push:
   workflow_dispatch:
 jobs:
   Env_job:
