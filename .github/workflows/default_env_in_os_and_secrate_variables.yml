@@ -16,5 +16,5 @@ jobs:
     steps:
       - runs: |
       #i set this password in github-->settings.
-        echo '{{ $SRISAI_PASSWORD}}'
+      echo 'SRISAI_PASSWORD:- ${{ SRISAI_PASSWORD}}'
         
