@@ -27,4 +27,4 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: file
-      run: cat file.txt  
+      - run: cat file.txt  
