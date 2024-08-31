@@ -5,7 +5,9 @@ on:
 jobs:
   windows_job:
     runs-on: windows-latest
-    steps: env
+    run:
+      steps: env
   linux_job:
      runs-on: ubuntu-latest
-     steps: env
+     run:
+      steps: env
