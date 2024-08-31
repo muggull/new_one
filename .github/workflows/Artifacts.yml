@@ -24,7 +24,7 @@ jobs:
     needs: job_2
     steps:
       - name: accessing the file from first job
-        run: cat file.txt
       - uses: actions/download-artifact@v2
-        with:
-          name: file  
+          with:
+            name: file
+      run: cat file.txt  
