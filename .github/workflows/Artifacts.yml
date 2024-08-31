@@ -1,11 +1,12 @@
-#artifacts allows us to share data betweenn jobs in a workflow  \\
+
+name: Artifacts Demo
+#artifacts allows us to share data betweenn jobs in a workflow
 #and store data once that workflow has completed.
 
 #there are some of the common artifacts  that we can upload.
 #   Log files and core dump
 #   Test results , failure, and screenshots.
 #   stress test performance output and code coverage output.
-name: Artifacts Demo
 on:
   workflow-dispatch:
 jobs:
