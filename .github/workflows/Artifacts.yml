@@ -14,7 +14,7 @@ jobs:
       - name: "creating file"
         run: echo "Hi this file is for writing purpose" > file.txt
 
-      - uses: actions/upload-artifacts@v2
+      - uses: actions/upload-artifact@v2
         with:
           name: "uploading with uses"
           path: file.txt
@@ -24,6 +24,6 @@ jobs:
     steps:
       - name: accessing the file from first job
         run: cat file.txt
-      - uses: actions/download-artfacts@v2
+      - uses: actions/download-artfact@v2
 
     
