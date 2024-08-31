@@ -22,8 +22,8 @@ jobs:
     name: reseiving out from job 1
     runs-on: ubuntu-latest
     steps:
-      name: accessing the file from first job
-      run: cat file.txt
+      - name: accessing the file from first job
+        run: cat file.txt
       - uses: actions/download-artfacts@v2
 
     
