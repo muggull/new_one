@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     #i set this password in github-->settings.
-      - run: echo 'SRISAI_PASSWORD:- ${{ SRISAI_PASSWORD}}'
+      - run: echo 'SRISAI_PASSWORD:- ${{ secrets.SRISAI_PASSWORD}}'
       
       
         
