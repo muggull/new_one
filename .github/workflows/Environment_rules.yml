@@ -5,7 +5,7 @@ on:
 jobs:
   Env_job:
     runs-on: ubuntu-latest
-    evironment:
+    environment:
       name: Env_protaction_rules
     steps:
       - name: 'Environment'
