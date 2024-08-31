@@ -9,7 +9,7 @@ name: "Artifacts Demo"
 on:
   workflow_dispatch:
 jobs:
-  upload_job:
+  job_2:
     runs-on: ubuntu-latest
     - steps:
         name: creating file
