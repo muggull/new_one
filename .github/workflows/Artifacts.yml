@@ -26,4 +26,4 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: "uploading with uses" #the names should be same
-      run: cat file.txt  
+      - run: cat file.txt  
