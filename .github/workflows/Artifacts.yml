@@ -7,7 +7,7 @@ name: "Artifacts Demo"
 #   Test results , failure, and screenshots.
 #   stress test performance output and code coverage output.
 on:
-  workflow-dispatch:
+  workflow_dispatch:
 jobs:
   upload_job:
     runs-on: ubuntu-latest
