@@ -12,11 +12,11 @@ jobs:
   job_2:
     runs-on: ubuntu-latest
     steps:
-     - name: creating file
+      name: creating file
       run: echo "Hi this file is for writing purpose" > file.txt
 
       uses: actions/upload-artifacts@v2
-       with:
+      with:
         name: uploading with uses
         path: file.txt
   receiving_job:
