@@ -19,5 +19,5 @@ jobs:
     needs: job_1
     steps:
     - name: "getting value fro job1"
-      run: echo ${ needs.job1.steps.value_1.outputs.a}
+      run: echo ${{ needs.job1.steps.value_1.outputs.a}}
      
