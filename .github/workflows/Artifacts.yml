@@ -6,18 +6,17 @@ name: "Artifacts Demo"
 #   Log files and core dump
 #   Test results , failure, and screenshots.
 #   stress test performance output and code coverage output.
-on:
-  workflow_dispatch:
+on: push
 jobs:
   job_2:
     runs-on: ubuntu-latest
     steps:
-      - name: creating file
+      - name: "creating file"
         run: echo "Hi this file is for writing purpose" > file.txt
 
       - uses: actions/upload-artifacts@v2
         with:
-          name: uploading with uses
+          name: "uploading with uses"
           path: file.txt
   receiving_job:
     name: reseiving out from job 1
